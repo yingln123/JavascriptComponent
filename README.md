@@ -1,0 +1,2 @@
+# JavascriptComponent
+Custom Javascript Component
