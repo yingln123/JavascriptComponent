@@ -1,0 +1,44 @@
+@CHARSET "UTF-8";
+body,html{margin:0px;padding:0px;}
+ul,li{list-style-type: none;padding:0px;margin:0px}
+body{background-color:#FFF}
+
+a {color:#FFF;text-decoration: none;}
+a:active, a:hover {outline: 0;}
+
+
+
+header{left: 0;  position: fixed;  right: 0; transform: translate3d(0px, 0px, 0px); z-index: 1030;width:100%;height:50px;background:#036ebe;line-height: 50px;color: #FFF ;cursor: pointer;}
+header .container .navbar-header .navbar-brand{padding-left:100px; display: inline-block;font-family: "黑体";font-size: 25px; font-weight: bold}
+header .navbar-header{position:relative;}
+header .user-box{display: inline-block;width:200px;position: absolute;right: 20px;text-align: center;font-weight: bold;font-family:'楷体'}
+header .user-box:hover{display: inline-block;width:200px;background:#005DA2; }
+
+.banner{width:100%;height:70px;/*border:1px solid #CCC;*/border-top:1px solid #CCC;border-bottom:1px solid #CCC;;background-color:#e9ecf1;position: relative;top:50px;z-index: 99}
+.select-element{width:200px;position: relative;top:15px;left:30px;}
+.select-element .select-box{width:200px;height:40px;background-color:#FFF;border:1px solid #CCC;overflow: hidden;cursor: pointer;}
+.select-element .select-box .ico{display: inline-block;width:50px;border-right: 1px solid #CCC;height:40px;float: left;}
+.select-element .select-box .value-box{display: inline-block;width:130px;height:40px;line-height: 40px;float: left;font-family: inherit;color:#036ebe;font-size: 14px;padding-left:10px;padding-right:9px;}
+.select-element ul{width:200px;background-color:#FFF;border:1px solid #CCC;overflow: hidden;position:relative; display: none}
+.select-element ul li{height:20px;line-height: 20px;font-family: "黑体";color:#036ebe;font-size: 14px;padding-left:10px;cursor: pointer;}
+.select-element ul li:hover{background-color: #036ebe; color:#FFF }
+
+/*圆角*/
+.radius15{border-radius: 15px;}
+.radius5{border-radius: 5px;}
+.radiusTop5{border-top-left-radius: 5px; border-top-right-radius: 5px;}
+.radiusBottom5{border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;}
+
+.main{position: relative; top: 50px;background-color: #e1e6ec;height:auto; min-height:670px; _height:670px;}
+.main .left-menu{width:200px;border:1px solid #CCC;padding:30px;}
+.main .left-menu .menu-item{overflow: hidden;border:1px solid #86bae1;font-family: "微软雅黑";cursor: pointer;margin-bottom:40px;}
+.main .left-menu .menu-item .menu-item-title{background-color: #036ebe;display: block;width:100%;height: 40px;line-height: 40px;padding-left:20px;color:#FFF}
+/*.main .left-menu .menu-item .menu-item-title:hover{color:#036ebe;background-color: #EEE}*/
+.main .left-menu .menu-item ul{display: block}
+.main .left-menu .menu-item li{height: 40px;line-height: 40px;padding-left:20px;border-top:1px solid #86bae1}
+.main .left-menu .menu-item li:hover{background-color: #EEE}
+
+.main .container{width:80%;height:auto;min-height:600px;_height:600px;border:1px solid #CCC;position:absolute;top:0px;left:280px;}
+
+
+ footer{/*width:100%;height: auto;background-color: #0f2432;height:200px*/}
