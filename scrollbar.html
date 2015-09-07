@@ -55,6 +55,12 @@
 			for(var i=0;i<scrollArea.length;i++){
 				scrollArea[i].onmousewheel=function(event){
 					var event = event||window.event;
+/*
+					event.stopPropagation();
+					event.cancelBubble=false;
+		*/		
+
+
 					var block = this.querySelector(".scroll_bar>.scroll_block");
 					var scrollContent = this.querySelector(".scroll_content");
 					if(event.wheelDelta>0){  //向下滚动
@@ -66,6 +72,8 @@
 							}else{
 								scrollContent.style.top=scrollContent.offsetTop+10+"px";
 								block.style.top=Math.abs(scrollContent.offsetTop)*(block.parentNode.offsetHeight-block.offsetHeight)/(scrollContent.offsetHeight-scrollContent.parentNode.offsetHeight)+"px";
+									event.preventDefault();
+
 							}	
 						}
 					}else{ //向上滚动
@@ -78,6 +86,7 @@
 							}else{
 								scrollContent.style.top=scrollContent.offsetTop-10+"px";	
 								block.style.top=Math.abs(scrollContent.offsetTop)*(block.parentNode.offsetHeight-block.offsetHeight)/(scrollContent.offsetHeight-scrollContent.parentNode.offsetHeight)+"px";
+									event.preventDefault();
 							}
 						}
 					}
@@ -87,7 +96,7 @@
 	}
   </script>
  </head>
- <body bgcolor=rgb(225, 230, 236)>	
+ <body bgcolor=rgb(225, 230, 236) style="height:2000px">	
 	<div class="div1">
 		<div class="scroll_border">
 			<div class="scroll_bar">
