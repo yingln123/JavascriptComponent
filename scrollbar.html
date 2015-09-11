@@ -6,10 +6,9 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
   <style>
-	.div1{width:800px;height:500px;margin:100px auto;border:1px solid #CCC;}
+	.div1{width:800px;height:500px;margin:100px auto;border:1px solid #CCC;overflow:hidden;}
 	.scroll_border{
 		width:100%;
-		/*border:1px solid #C4C4C4;*/
 		height:100%;
 		overflow:hidden;
 		position:relative;
@@ -19,31 +18,15 @@
 		min-height:100%;
 		overflow:hidden;
 	}
-	.scroll_border>.scroll_content{background:#64ad27;width:auto;position:relative;}
+	.scroll_border>.scroll_content{width:auto;position:relative;}
 	.scroll_border>.scroll_bar{min-width:20px;height:100%;float:right;background:#FFFFCC ;position:relative; }
 	.scroll_border>.scroll_bar>.scroll_block{width:20px;height:30px;margin:0 auto;position:relative; top:0 }
-	.button{display: inline-block;
-	outline: none;
-	cursor: pointer;
-	text-align: center;
-	text-decoration: none;
-	font: 14px/100% Arial, Helvetica, sans-serif;
-	
-	text-shadow: 0 1px 1px rgba(0,0,0,.3);
-	-webkit-border-radius: .5em; 
-	-moz-border-radius: .5em;
-	border-radius: .5em;
-	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	color: #fef4e9;
-	border: solid 1px #da7c0c;
-	background: #f78d1d;
-	background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
-	background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+	.scroll_border>.scroll_bar>.scroll_block.button{display: inline-block;outline: none;cursor: pointer;text-align: center;text-decoration: none;font: 14px/100% Arial, Helvetica, sans-serif;background:#CCC;}
 
-}
+	
+	.scroll_border.style2>.scroll_bar{min-width:10px;height:100%;float:right;background:rgba(102, 102, 102,0.2);position:absolute;right:0;text-algin:center; transition:.5s all ease;opacity:0;border-radius:10px;}
+	.scroll_border.style2:hover>.scroll_bar{opacity:1}
+	.scroll_border.style2>.scroll_bar>.scroll_block{width:10px;height:30px;margin:0 auto;position:relative; top:0; border-radius:10px;}
   </style>
   <script>
 	window.onload=function(){
@@ -96,7 +79,7 @@
 	}
   </script>
  </head>
- <body bgcolor=rgb(225, 230, 236) style="height:2000px">	
+ <body style="height:2000px">	
 	<div class="div1">
 		<div class="scroll_border">
 			<div class="scroll_bar">
@@ -147,6 +130,60 @@
 				自定义滚动条42<br/>
 			</div>
 		</div>
+
+	<hr>
+	</div>
+	<div class="div1">
+	<div class="scroll_border style2">
+			<div class="scroll_bar">
+				<div class="scroll_block button"></div>
+			</div>
+			<div class="scroll_content" id="content">
+				自定义滚动条11----------------------------------------------------------------------------------------<br/>
+				自定义滚动条2<br/>
+				自定义滚动条3<br/>
+				自定义滚动条4<br/>
+				自定义滚动条5<br/>
+				自定义滚动条6<br/>
+				自定义滚动条7<br/>
+				自定义滚动条8<br/>
+				自定义滚动条9<br/>
+				自定义滚动条10<br/>
+				自定义滚动条11<br/>
+				自定义滚动条12<br/>
+				自定义滚动条13<br/>
+				自定义滚动条14<br/>
+				自定义滚动条15<br/>
+				自定义滚动条16<br/>
+				自定义滚动条17<br/>
+				自定义滚动条18<br/>
+				自定义滚动条19<br/>
+				自定义滚动条20<br/>
+				自定义滚动条21<br/>
+				自定义滚动条22<br/>
+				自定义滚动条23<br/>
+				自定义滚动条24<br/>
+				自定义滚动条25<br/>
+				自定义滚动条26<br/>
+				自定义滚动条27<br/>
+				自定义滚动条28<br/>
+				自定义滚动条29<br/>
+				自定义滚动条30<br/>
+				自定义滚动条31<br/>
+				自定义滚动条32<br/>
+				自定义滚动条33<br/>
+				自定义滚动条34<br/>
+				自定义滚动条35<br/>
+				自定义滚动条36<br/>
+				自定义滚动条37<br/>
+				自定义滚动条38<br/>
+				自定义滚动条39<br/>
+				自定义滚动条30<br/>
+				自定义滚动条41<br/>
+				自定义滚动条42<br/>
+			</div>
+		</div>
+
 	</div>
 	
 	
